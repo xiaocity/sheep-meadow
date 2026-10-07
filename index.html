@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sheep Meadow — a cosy tile-match puzzle</title>
+<meta name="description" content="An offline tile-match puzzle where every level is solvable by construction, not by luck. Play free in your browser, or get it on Google Play.">
+<meta property="og:title" content="Sheep Meadow">
+<meta property="og:description" content="A cosy tile-match puzzle. Every level is solvable — play free in your browser.">
+<meta property="og:image" content="https://xiaocity.github.io/sheep-meadow/store/play-feature-1024x500.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="store/play-icon-512.png">
+<style>
+  :root{
+    --bg:#F6FAF0; --card:#FFFFFF; --ink:#1C241D; --ink-2:#3D4A3E;
+    --muted:#6E7A6C; --hair:#DEE5D7; --accent:#2E6B3E;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#121611; --card:#1A1F18; --ink:#E7ECE1; --ink-2:#C3CCBD;
+      --muted:#94A091; --hair:#2B3228; --accent:#8CC77C;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    display:flex;align-items:center;justify-content:center;min-height:100vh;padding:32px 20px}
+  .wrap{max-width:420px;text-align:center}
+  .icon{width:112px;height:112px;border-radius:26px;box-shadow:0 16px 36px rgba(30,70,40,.22);margin-bottom:20px}
+  h1{font-size:26px;margin:0 0 8px}
+  .tag{color:var(--muted);font-size:15px;margin:0 0 30px;line-height:1.55}
+  .btn{display:block;width:100%;padding:16px 20px;border-radius:999px;text-decoration:none;
+    font-weight:700;font-size:16px;margin-bottom:14px;transition:transform .15s}
+  .btn:active{transform:scale(.97)}
+  .btn.primary{background:linear-gradient(#3A7F4B,#2F6F41);color:#fff;
+    box-shadow:0 10px 24px rgba(46,107,62,.30)}
+  .btn.ghost{background:var(--card);color:var(--accent);border:1.5px solid var(--hair)}
+  .note{color:var(--muted);font-size:12.5px;margin-top:26px;line-height:1.7}
+  .note a{color:var(--muted);text-decoration:underline}
+  .langs{color:var(--muted);font-size:12.5px;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img class="icon" src="store/play-icon-512.png" alt="">
+  <h1>Sheep Meadow</h1>
+  <p class="tag">A cosy tile-match puzzle. Every level is solvable — by construction, not by luck. Lose, and it replays the solution on your exact board.</p>
+  <a class="btn primary" href="play/">▶ Play now in your browser</a>
+  <a class="btn ghost" href="https://play.google.com/store/apps/details?id=com.cityg.caoyuan&referrer=utm_source%3Dwebdemo%26utm_medium%3Dlanding">Get it on Google Play</a>
+  <p class="note">Runs entirely in your browser — nothing is uploaded, nothing is collected.<br>
+    <a href="https://xiaocity.github.io/privacy/">Privacy Policy</a></p>
+  <p class="langs">English · 简体中文 · 繁體中文 · 日本語 · Español</p>
+</div>
+</body>
+</html>
