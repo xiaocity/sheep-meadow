@@ -52,5 +52,14 @@
     <a href="https://xiaocity.github.io/privacy/">Privacy Policy</a></p>
   <p class="langs">English · 简体中文 · 繁體中文 · 日本語 · Español</p>
 </div>
+<script>
+// ?src=xxx：把来源带到试玩页，并记进 Play 链接的 utm_source（webdemo_xxx）
+(function(){
+  var m=location.search.match(/[?&]src=([A-Za-z0-9_]{1,40})/); if(!m) return;
+  var a=document.querySelectorAll('a.btn');
+  a[0].href='play/?src='+m[1];
+  a[1].href=a[1].href.replace('utm_source%3Dwebdemo','utm_source%3Dwebdemo_'+m[1]);
+})();
+</script>
 </body>
 </html>

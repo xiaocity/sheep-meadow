@@ -40,6 +40,9 @@
                                        {t:'Enjoying it?',c:'Get it on Play'};
   document.getElementById('wd-text').textContent=T.t;
   document.getElementById('wd-cta').textContent=T.c;
+  // ?src=xxx：帖子里的试玩链接带上来源，顶栏的 Play 链接就记成 webdemo_xxx，Console 里能分清是哪个渠道
+  var m=location.search.match(/[?&]src=([A-Za-z0-9_]{1,40})/), cta=document.getElementById('wd-cta');
+  if(m) cta.href=cta.href.replace('utm_source%3Dwebdemo','utm_source%3Dwebdemo_'+m[1]);
   document.getElementById('wd-x').onclick=function(){
     bar.classList.add('hide');
     try{ localStorage.setItem('wdBannerHidden','1'); }catch(err){}
